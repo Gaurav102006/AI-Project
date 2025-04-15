@@ -226,17 +226,7 @@ def predict_disease(image_path):
         print(f"{cls}: {proba[i]*100:.1f}%")
     print(f"\nMost likely: {unique_classes[pred]} ({proba[pred]*100:.1f}% confidence)")
 
-        # Vitamin information
-    vitamin_info = {
-        "Potato___healthy": "Vitamin C, B6",
-        "Tomato___healthy": "Vitamin C, K",
-        # Add more plants and their vitamins here
-    }
-
     predicted_plant = unique_classes[pred]
-    vitamins = vitamin_info.get(predicted_plant, "Vitamin information not available for this plant.Please Water Me To Make Me Healthy💧💧")
-
-    print(f"\nVitamins present in {predicted_plant}: {vitamins}")
 
 # Test with an example (upload your own image)
 uploaded = files.upload()
