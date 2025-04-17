@@ -22,7 +22,7 @@ from sklearn.metrics import accuracy_score, classification_report
 from sklearn.decomposition import PCA
 from google.colab import files
 
-# Setup Kaggle API (upload your kaggle.json first)
+# Own Kaggle API Key
 if not os.path.exists('/root/.kaggle/kaggle.json'):
     uploaded = files.upload()
     !mkdir -p ~/.kaggle
